@@ -14,16 +14,16 @@ function Header({ham, setHam}) {
   };
   return (
     <>
-      <div className={`flex bg-slate-500 ${ dark ? "" : "hidden"}`} onClick={handleDark} >
-        <p>This site uses cookies.</p>
-        <button onClick=>x</button>
+      <div className={`flex space-between bg-slate-500 ${ dark ? "" : "hidden"}`} onClick={handleDark} >
+        <p className="left-0">This site uses cookies.</p>
+        <button className="text-white text-2xl text-extrabold right-2" onClick={handleDark}>x</button>
       </div>
     {/*Nav Bar*/}
     <div className="bg-black flex flex-col sticky top-0 border-slate-700">
       <header className="flex justify-between w-full p-2  sm:px-4 shadow-xl">
         <div className="flex max-w-7xl">
           <a href="#">
-            <span className="text-3xl font-extrabold text-sky-600">Fudu</span>
+            <span className="text-3xl font-extrabold text-prim2">Fudu</span>
           </a>
         </div>
           {/*Hamburger Icon*/}

@@ -5,7 +5,7 @@ import html from "../static/svg/html5.svg";
 
 import LangCard from './RV/LangCard.js';
 import MenuItem from './RV/MenuItem.js';
-import HamburgerIcon from './HamburgerIcon.js';
+
 
 function Content() {
   const contents = {"Python":py, "JavaScript":js, "HTML5":html};
@@ -21,14 +21,6 @@ function Content() {
         />
         </svg>
       </div>
-      {/*
-      <div style={{ backgroundColor: "#2790dc" }} className="px-4 flex text-black flex-row md:flex-col">
-        <MenuItem name="Home" />
-        <MenuItem name="About" />
-        <MenuItem name="Contact" />
-        <MenuItem name="Login" />
-      </div>
-      */}
       <div className="w-auto shadow-slate-400/50 mt-8 mb-2 from-sky-200 bg-gradient-to-b md:ml-20 md:w-100">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
           <path fill="#ffffff" fillOpacity={1} d="M0,192L1440,64L1440,0L0,0Z" />
@@ -170,13 +162,7 @@ function Content() {
       className="mx-auto w-full lg:ml-1"
     />
   </div>
-  {/*
-    Object.keys(contents).map(key => (
-      <LangCard src={contents[key]} content={key} />
-         ))
-  */}
   {/* SCRIPT */}
-  <HamburgerIcon />
   </div>
   );
 }
