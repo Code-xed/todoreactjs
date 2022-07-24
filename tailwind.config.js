@@ -14,7 +14,7 @@ module.exports = {
       },
    },
     fontFamily: {
-        oswald: ["Oswald", "sans-serif"],
+        playfair: ["Playfair Display", "sans-serif"],
       },
   },
   plugins: [],

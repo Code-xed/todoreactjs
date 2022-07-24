@@ -5,6 +5,7 @@ import html from "../static/svg/html5.svg";
 
 import LangCard from './RV/LangCard.js';
 import MenuItem from './RV/MenuItem.js';
+import Socials from './Socials.js';
 
 
 function Content() {
@@ -155,14 +156,7 @@ function Content() {
     {/*<LangCard src={} content={}/>*/}
   </div>
   {/* Card */}
-  {/* GUBFEST*/}
-  <div>
-    <img
-      src="{{ url_for('static', filename='svg/gubfr.svg')}}"
-      className="mx-auto w-full lg:ml-1"
-    />
-  </div>
-  {/* SCRIPT */}
+  <Socials />
   </div>
   );
 }

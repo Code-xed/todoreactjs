@@ -3,7 +3,7 @@ import { Transition } from '@headlessui/react';
 
 function Menu({ham, setHam}) {
   return (
-    <div className={`flex items-center space-x-1 text-bold text-3xl text-black bg-prim4 min-h-[30vh] shadow-lg shadow-black ${ham ? "" : "hidden"}`}>
+    <div className={`flex items-center space-x-1 text-bold text-3xl text-white bg-prim2 min-h-[30vh] shadow-lg shadow-black ${ham ? "" : "hidden"}`}>
       <Transition as="ul" 
         enter="transition-opacity duration-150"
         enterFrom="opacity-0"
