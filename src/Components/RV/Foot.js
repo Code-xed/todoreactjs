@@ -1,8 +1,13 @@
 import React from 'react';
 
+import LangCard from './LangCard.js';
+
 function Foot() {
   return (
   <>
+    <LangCard src="0" content="This Is A Test" />
+    <LangCard src="1" content="This Is A Test" />
+    <LangCard src="2" content="This Is A Test" />
     <div className="text-center min-w-full shadow-lg shadow-slate-400">
       <h3 className="text-bold text-2xl hover:underline select-none">Built With ❤️ Using Flask And Tailwind</h3>
     </div>
@@ -13,7 +18,7 @@ function Foot() {
       </svg>
       <div className="flex flex-col m-0 p-0 ">
         <h1 className="my-4 text-bold text-[2.5rem]">Get Ideas Delivered to You</h1>
-        <button className="bg-white text-black rounded-[20px] p-[0.4rem] text-bold text-[14px] hover:text-white hover:bg-blue-600 mx-[40vw]">Sign Up</button>
+        <button className="bg-white text-black rounded-[20px] p-[0.4rem] text-bold text-[14px] hover:text-white hover:bg-prim3 mx-[40vw]">Sign Up</button>
       </div>
       <h2 className="my-[50px]">Copyright © 2022 <strong className="text-underline-red-500">Aditya.</strong><br/>All Rights Reserved.</h2>
     </div>

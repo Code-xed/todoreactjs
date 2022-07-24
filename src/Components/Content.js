@@ -5,6 +5,7 @@ import html from "../static/svg/html5.svg";
 
 import LangCard from './RV/LangCard.js';
 import MenuItem from './RV/MenuItem.js';
+import HamburgerIcon from './HamburgerIcon.js';
 
 function Content() {
   const contents = {"Python":py, "JavaScript":js, "HTML5":html};
@@ -20,15 +21,17 @@ function Content() {
         />
         </svg>
       </div>
+      {/*
       <div style={{ backgroundColor: "#2790dc" }} className="px-4 flex text-black flex-row md:flex-col">
         <MenuItem name="Home" />
         <MenuItem name="About" />
         <MenuItem name="Contact" />
         <MenuItem name="Login" />
       </div>
+      */}
       <div className="w-auto shadow-slate-400/50 mt-8 mb-2 from-sky-200 bg-gradient-to-b md:ml-20 md:w-100">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
-          <path fill="#e2e8f0" fillOpacity={1} d="M0,192L1440,64L1440,0L0,0Z" />
+          <path fill="#ffffff" fillOpacity={1} d="M0,192L1440,64L1440,0L0,0Z" />
         </svg>
         <h1 className="border-radius-lg text-bold px-6 text-4xl outline-lg border-l-8 border-rose-900 shadow-sm shadow-slate-400">Bulid Beautiful Web{" "}
           <span className="text-5xl text-sky-500">EXPERIENCES</span>
@@ -173,6 +176,7 @@ function Content() {
          ))
   */}
   {/* SCRIPT */}
+  <HamburgerIcon />
   </div>
   );
 }
