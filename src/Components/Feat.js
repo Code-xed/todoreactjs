@@ -1,4 +1,6 @@
-function Feat({Title, Para}) {
+
+
+function Feat({Title, Para, from, to}) {
   var le = Title.pop();
   return (
     <div className="w-auto shadow-slate-400/50 mt-8 mb-2 from-sky-200 bg-gradient-to-b md:ml-20 md:w-100">

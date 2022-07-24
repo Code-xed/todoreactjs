@@ -3,16 +3,16 @@ import { Transition } from '@headlessui/react';
 
 function Menu({ham, setHam}) {
   return (
-    <div className={`flex items-center space-x-1 text-bold text-3xl text-white bg-prim2 min-h-[30vh] shadow-lg shadow-black ${ham ? "" : "hidden"}`}>
+    <div className={`flex items-center absolute space-x-1 text-bold text-3xl text-white bg-black h-[100vh] w-[100%] shadow-lg shadow-black top-16 ${ham ? "" : "hidden"}`}>
       <Transition as="ul" 
-        enter="transition-opacity duration-150"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition-opacity duration-40"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
+        enter="translateX duration-40"
+        enterFrom="0%"
+        enterTo="-100%"
+        leave="translateX duration-40"
+        leaveFrom="-100%"
+        leaveTo="0%"
         show={ham} 
-        className="space-y-2 md:inline-flex bg-grey-900" >
+        className="space-y-2 md:inline-flex bg-grey-900 border-white" >
         <li><a href="#" className="px-4 py-2 font-semibold rounded">🏠 Home</a></li>
         <li><a href="#" className="px-4 py-2 font-semibold rounded">😁 About</a></li>
         <li><a href="#" className="px-4 py-2 font-semibold rounded">📞 Contact</a></li>

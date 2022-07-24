@@ -6,14 +6,14 @@ import TelegramIcon from './../static/svg/tg.svg';
 
 function Socials () {
   return (
-    <div className="flex flex-wrap ">
-      <div className="w-auto">
+    <div className="flex flex-col">
+      <div className="w-24">
         <img src={TwitterIcon} />
       </div>
-      <div className="w-auto">
+      <div className="w-24">
         <img src={InstagramIcon} />
       </div>
-      <div className="w-auto">
+      <div className="w-24">
         <img src={TelegramIcon} />
       </div>
     </div>
