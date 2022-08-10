@@ -13,7 +13,7 @@ function Foot() {
     </div>
     <div className="flex justify-between flex-col text-white text-center bg-black h-[60vh] bottom-0 select-none break-normal">
       {/* FOOTER LINE*/}
-      <svg className="mt-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+      <svg className="mt-0 w-[100vw]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
         <path fill="#ffffff" fillOpacity={1} d="M0,192L1440,64L1440,0L0,0Z" />
       </svg>
       <div className="flex flex-col m-0 p-0 ">
